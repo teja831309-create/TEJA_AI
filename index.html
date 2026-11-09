@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#090b16">
+  <meta name="description" content="TEJA AI gaming assistant and everyday AI helper">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <title>TEJA AI — Gaming Assistant</title>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-mark">T</div>
+      <div class="brand-copy"><strong>TEJA <span>AI</span></strong><small>YOUR GAMING + AI SIDEKICK</small></div>
+      <div class="status"><i></i><span id="statusText">Checking AI…</span></div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="eyebrow">✦ BUILT FOR EVERY PLAYER</div>
+        <h1>Play smarter.<br><em>Ask anything.</em></h1>
+        <p>Your friendly AI for gaming tips, guides, settings and everyday questions.</p>
+      </section>
+
+      <section class="game-panel">
+        <div class="panel-label">CHOOSE YOUR GAME</div>
+        <select id="gameSelect" aria-label="Choose your game">
+          <option>All games</option><option>Free Fire</option><option>BGMI</option>
+          <option>Minecraft</option><option>Roblox</option><option>GTA</option>
+          <option>Call of Duty Mobile</option><option>Fortnite</option><option>Valorant</option>
+          <option>EA SPORTS FC</option><option>Other game</option>
+        </select>
+        <div class="quick-grid">
+          <button class="quick" data-prompt="Give me beginner tips and a practice plan for">🎮 <span>Game tips</span></button>
+          <button class="quick" data-prompt="Suggest fair-play control and sensitivity starting points for">🎯 <span>Settings help</span></button>
+          <button class="quick" data-prompt="Explain the best beginner strategy for">🧠 <span>Strategy</span></button>
+          <button class="quick" data-prompt="Help me understand an update or game feature in">📰 <span>Game guide</span></button>
+        </div>
+      </section>
+
+      <section class="chat-card">
+        <div class="chat-heading"><div><span class="live-dot"></span><strong>TEJA AI CHAT</strong><small>Ask about any game or anything else</small></div><button id="clearBtn" class="icon-btn" title="Clear chat" aria-label="Clear chat">↻</button></div>
+        <div id="messages" class="messages" aria-live="polite">
+          <div class="bubble ai"><b>TEJA AI</b><p>Hey! I'm ready. Choose a game above or ask me anything. What are we playing today?</p></div>
+        </div>
+        <div class="composer">
+          <textarea id="promptInput" rows="1" maxlength="5000" placeholder="Message TEJA AI…" aria-label="Message TEJA AI"></textarea>
+          <button id="micBtn" class="tool-btn" title="Voice input" aria-label="Voice input">🎙</button>
+          <button id="sendBtn" class="send-btn" aria-label="Send message">➤</button>
+        </div>
+        <div class="composer-note"><span>Enter to send · Shift + Enter for new line</span><button id="speakToggle" class="text-btn">🔊 Voice replies: On</button></div>
+      </section>
+
+      <section class="feature-row">
+        <div>🎤 <b>Voice input</b><small>Talk instead of typing</small></div>
+        <div>🔈 <b>Spoken replies</b><small>Listen to answers</small></div>
+        <div>📱 <b>Installable</b><small>Add to your home screen</small></div>
+      </section>
+      <p class="footnote">TEJA AI is an independent project, not affiliated with game publishers. AI advice can be imperfect; check official game updates.</p>
+    </main>
+  </div>
+  <script src="/config.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
