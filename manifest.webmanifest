@@ -1,14 +1,15 @@
 {
   "name": "TEJA AI",
   "short_name": "TEJA",
-  "start_url": "/",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#090b16",
   "theme_color": "#090b16",
   "description": "TEJA AI gaming assistant and everyday AI helper",
   "icons": [
     {
-      "src": "/icon.svg",
+      "src": "./icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
